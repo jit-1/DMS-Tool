@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jit.pdm.dmstool" >
+
+    <uses-sdk android:minSdkVersion="10"/>
+
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+
+    <application
+        android:icon="@drawable/logo1"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".CreateDms"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            >"
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".NewDms"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="com.test.NEWDMS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+
+        <activity
+            android:name=".Ping"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="com.test.Ping" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".Recorder"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            >
+
+            <intent-filter>
+                <action android:name="com.test.RECORD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+
+        <activity
+            android:name=".message"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="com.test.MESSAGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".Structmessage"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="com.test.STRUCTMESSAGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".ListPage"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            >
+
+            </activity>
+
+
+
+
+        <activity
+            android:name=".AttachAudioVideo"
+            android:label="Attach IMG/VID/SVS/SMS"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+
+
+
+    </application>
+
+</manifest>

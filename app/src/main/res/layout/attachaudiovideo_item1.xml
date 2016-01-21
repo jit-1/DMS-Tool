@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.61"
+        android:background="#ffffff"
+        >
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText1"
+            android:layout_below="@+id/editText1"
+            android:layout_marginTop="52dp"
+            android:gravity="center"
+            android:textColor="#2F2E86"
+
+            android:hint="Enter your Destination number"
+            android:ems="10"
+            android:inputType="phone"
+            android:text="DefaultMcs" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText2"
+            android:layout_below="@+id/editText1"
+            android:layout_marginTop="22dp"
+            android:text="Destination"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#2F2E86"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText1"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="32dp"
+            android:text="TTL"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#2F2E86"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/image"
+            android:layout_alignBottom="@+id/image"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="27dp"
+            android:text="Capture Video"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/image"
+            android:layout_alignRight="@+id/image"
+            android:layout_below="@+id/image"
+            android:layout_marginTop="34dp"
+            android:text="Voice"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/sms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/audio"
+            android:layout_alignBottom="@+id/audio"
+            android:layout_alignLeft="@+id/video"
+            android:layout_alignRight="@+id/video"
+            android:text="SMS"
+            android:textColor="#FFFFFF" />
+        <Button
+            android:id="@+id/structsms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SMS Templates"
+            android:textColor="#FFFFFF"
+            android:layout_alignTop="@+id/tbtn"
+            android:layout_alignLeft="@+id/audio"
+            android:layout_alignStart="@+id/audio" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:inputType="number"
+            android:textColor="#2F2E86"
+            android:hint="Enter TTL"
+            android:text="50">
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/editText2"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="28dp"
+            android:alpha="1"
+            android:text="Capture image"
+            android:textColor="#FFFFFF" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New ToggleButton"
+            android:id="@+id/tbtn"
+            android:textOn="TTL expiry enforcing"
+            android:textOff="TTL expiry relaxed"
+            android:checked="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+
+            android:layout_below="@+id/sms"
+            android:layout_alignRight="@+id/sms"
+            android:layout_alignEnd="@+id/sms"
+            android:layout_marginTop="46dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

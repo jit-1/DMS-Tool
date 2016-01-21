@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="0.58"
+    android:alpha="1"
+    android:background="#ffffff"
+    android:drawingCacheQuality="auto" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Disaster"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#2F2E86"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginTop="82dp" />
+
+    <Button
+        android:id="@+id/create"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="17dp"
+        android:text="Create"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Source Name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#2F2E86"
+
+        android:textStyle="bold"
+        android:layout_below="@+id/disaster_type"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignStart="@+id/editText1" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/create"
+        android:layout_alignBottom="@+id/create"
+        android:layout_toRightOf="@+id/create"
+        android:text="Cancel"
+
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:textColor="#2F2E86"
+
+        android:hint="Enter your phone number"
+        >
+
+        <requestFocus />
+    </EditText>
+
+    <Spinner
+        android:id="@+id/disaster_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+</RelativeLayout>
